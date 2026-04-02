@@ -36,7 +36,7 @@ int main() {
         s[i].percentage = s[i].total / 3;
     }
 
-    // Display results
+     Display results
     printf("\n--- Student Results ---\n");
 
     for(int i = 0; i < n; i++) {
