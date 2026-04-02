@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Function to add two matrices
+ Function to add two matrices
 void addMatrix(int r, int c, int A[r][c], int B[r][c]) {
     int sum[r][c];
     printf("\nAddition of matrices:\n");
