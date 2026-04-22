@@ -1,0 +1,29 @@
+int factorial(int n) {
+    int i, fact = 1;
+    for(i = 1; i <= n; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+
+int main() {
+    int n, i;
+    float x, sum = 0;
+    int sign = 1;
+
+    printf("Enter value of x (in radians): ");
+    scanf("%f", &x);
+
+    printf("Enter number of terms: ");
+    scanf("%d", &n);
+
+    for(i = 1; i <= n; i++) {
+        int power = 2*i - 1;
+        sum += sign * ( (pow(x, power)) / factorial(power) );
+        sign = -sign;  // alternate sign
+    }
+
+    printf("Sum of sine series = %.5f\n", sum);
+
+    return 0;
+}
